@@ -4,6 +4,7 @@ int sumar(int a, int b);
 int restar(int a, int b);
 int multiplicar(int a, int b);
 
+
 int main() {
     int opcion;
     int num1, num2, resultado;
@@ -18,18 +19,20 @@ int main() {
         scanf("%d", &opcion);
         switch (opcion) {
             case 1:
+                numeros(&a,&b);
                 resultado = sumar(0, 0);
-                printf("Resultado de la suma: \n\n");
+                printf("Resultado de la suma: %d\n\n",resultado);
                 break;
 
             case 2:
+                numeros(&a,&b);
                 resultado = restar(0, 0);
-                printf("Resultado de la resta: \n\n");
+                printf("Resultado de la resta: %d\n\n",resultado);
                 break;
-
             case 3:
+                numeros(&a,&b);
                 resultado = multiplicar(num1, num2);
-                printf("Resultado de la multiplicacion: \n\n");
+                printf("Resultado de la multiplicacion: %d\n\n",resultado);
                 break;
             case 4:
                 printf("Saliendo de la calculadora...\n\n");
@@ -52,4 +55,12 @@ int restar(int a, int b) {
 
 int multiplicar(int a, int b) {
     return 0;
+}
+
+void numeros(int *a, int *b)
+{
+    printf("Ingrese el primer numero: ");
+    scanf("%d",&a);
+    printf("Ingrese el segundo numero: ");
+    scanf("%d",&b);
 }
