@@ -5,7 +5,6 @@ int restar(int a, int b);
 int multiplicar(int a, int b);
 void numeros(int *a,int *b);
 
-
 int main() {
     int opcion;
     int num1, num2, resultado;
