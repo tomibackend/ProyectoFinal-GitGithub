@@ -3,6 +3,7 @@
 int sumar(int a, int b);
 int restar(int a, int b);
 int multiplicar(int a, int b);
+void numeros(int *a,int *b);
 
 int main() {
     int opcion;
@@ -14,7 +15,7 @@ int main() {
         printf("2. Restar\n");
         printf("3. Multiplicar\n");
         printf("4. Salir\n");
-        printf("Selecciona una opcion: ");
+        printf("Selecciona una opcion:  ");
         scanf("%d", &opcion);
         switch (opcion) {
             case 1:
@@ -43,13 +44,14 @@ int main() {
 }
 
 int sumar(int a, int b) {
-    return 0;
+    return a + b;
 }
 
 int restar(int a, int b) {
-    return 0;
+    return a - b;
 }
 
 int multiplicar(int a, int b) {
-    return 0;
+    return a * b;
 }
+
